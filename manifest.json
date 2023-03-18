@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Shorts Extension Go Back On the Side",
+  "version": "1.0",
+  "description": "Youtube Shorts extension, left click on the side to go back",
+
+   "content_scripts": [
+    {
+        "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://www.youtube.com/shorts/*"
+      ],
+      "js": ["scripts/content.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+
+
+
+}
