@@ -1,4 +1,5 @@
 const timer = setInterval(() => {
+    console.log("on")
     const shorts_container =  document.getElementById("shorts-container");
     const short = document.getElementById("shorts-inner-container");
     if(shorts_container && short) {
@@ -11,7 +12,7 @@ const timer = setInterval(() => {
         
       });
     }
-  }, 150);
+  }, 1000);
 
 function getPosition(element) {
     var ClientRect = element.getBoundingClientRect();
